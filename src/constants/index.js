@@ -203,25 +203,7 @@ const homeTeam = [
         link: "",
       },
     ],
-  },
-  {
-    id: 5,
-    image: Member,
-    name: "Aryaveer Agarwal",
-    role: "Product Manager",
-    socials: [
-      {
-        id: 1,
-        name: "logo-instagram",
-        link: "",
-      },
-      {
-        id: 2,
-        name: "logo-linkedin",
-        link: "",
-      },
-    ],
-  },
+  }
 ];
 
 export { homeWhyUs, homeObjectivies, homeTestimonials, homeBlogsDemo, homeNewsDemo, homeTeam };
