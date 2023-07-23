@@ -4,7 +4,7 @@ import axios from "axios";
 import { saveAs } from "file-saver";
 
 const State = (props) => {
-  const HOST = "http://localhost:5000";
+  const HOST = "https://calm-blue-trout-tutu.cyclic.app";
   const [dataLoad, setDataLoad] = useState(false);
 
   // 1. Fetch all Blogs/News

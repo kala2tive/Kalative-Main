@@ -16,7 +16,7 @@ const Home = () => {
   const [totalTestis] = useState(homeTestimonials.length);
   const [currenTesti, setCurrentTesti] = useState(0);
 
-  const HOST = 'http://localhost:5000';
+  const HOST = "https://calm-blue-trout-tutu.cyclic.app";
 
   const [homeBlogsDemo, setHomeBlogsDemo] = useState([]); 
   const [homeNewsDemo, setHomeNewsDemo] = useState([]);
