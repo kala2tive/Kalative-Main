@@ -1,0 +1,168 @@
+@import "/src/index.css";
+
+/* app__navbar, nav__center, nav__logo, nav__links, nav__smscreen */
+
+.app__navbar {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF;
+}
+
+.nav__center {
+    width: 1240px;
+    max-width: 100%;
+    margin: auto;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.6rem;
+    padding: 0 1rem;
+}
+
+.nav__logo {
+    width: 80px;
+    padding-top: 0.5rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav__logo img {
+    width: 90%;
+    max-width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.nav__links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2.4rem;    
+}
+
+.nav__links li {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.3rem;
+    transition: all 0.3s ease;
+}
+
+.nav__links li a {
+    color: #575757;
+    font-family: var(--f-p);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    transition: all 0.3s ease;
+}
+
+.nav__links li a:hover {
+    color: #232323;
+}
+
+.nav__links li div {
+    width: 0;
+    height: 0;
+}
+
+.nav__links li a.link__activated {
+    color: #232323;
+}
+
+.nav__links li div.link__activated {
+    width: 40px;
+    height: 6px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.nav__links li a ion-icon {
+    display: none;
+}
+
+@media all and (max-width : 700px) {
+
+    .app__navbar {
+        position: relative;
+    }
+
+    .nav__center {
+        height: 170px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 1.2rem;
+    }
+    
+    .nav__logo {
+        height: auto;
+    }
+
+    .nav__links {
+        position: absolute;
+        width: 100%;
+        height: 76px;
+        top: 94px;
+        left: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1.2rem;
+        padding: 1rem;
+        overflow-x: scroll;
+        background-color: #dddddd;
+    }
+
+    .nav__links::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+    }
+
+    .nav__links li:nth-child(2) {
+        display: none;
+    }
+
+    .nav__links li {
+        flex: 0 0 auto;
+    }
+
+    .nav__links li div {
+        display: none;
+    }
+
+    .nav__links li a {
+        padding: 0.4rem 0.8rem;
+        border-radius: 16px;
+        background-color: #fff;
+        border: 2px solid #232323;
+        font-size: 17px;
+        color: #232323;
+    }
+
+
+    .nav__links li a.link__activated {
+        background-color: #FFC066;       
+    }
+
+}
+
+@media all and (max-width : 400px) {
+    .nav__links {
+        gap: 0.8rem;
+        padding: 0 0.6rem;
+    }
+}

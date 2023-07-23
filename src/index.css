@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Gotu&family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --f-p : 'Poppins', sans-serif;
+  --f-s : 'Gotu', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,body {
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+.app {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  background-color: #FFF;
+}
+
+.app__main {
+  width: 100%;
+  max-width: 100%;
+  min-height: 100vh;
+}
