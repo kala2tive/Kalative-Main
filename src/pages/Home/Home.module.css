@@ -1003,7 +1003,7 @@
         font-size: 20px;
     }
 
-    /* Section 4 Ends */
+    /* Section 4 Ends */ 
 }
 
 @media all and (max-width : 400px) {
@@ -1043,6 +1043,10 @@
         gap: 1.8rem;
     }
 
+    .each__member {
+        width: 90%;
+    }
+
     /* Section 7 Ends */
 
 }
@@ -1064,4 +1068,15 @@
     }
 
     /* Section 5,6 Ends */
+}
+
+@media all and (max-width : 310px) {
+    
+    /* Section 7 Starts */
+    
+    .each__member {
+        width: 100%;
+    }
+
+    /* Section 7 Ends */
 }
