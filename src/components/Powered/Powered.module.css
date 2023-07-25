@@ -37,8 +37,14 @@
         font-size: 15px;
         text-align: center;
     }
+}
+
+@media all and (max-width : 360px) {
+    .app__powered p {
+        font-size: 12px;
+    }
 
     .app__powered img {
-        display: none;
+        width: 50px;
     }
 }

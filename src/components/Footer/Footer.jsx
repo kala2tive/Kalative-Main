@@ -1,10 +1,11 @@
 import React from 'react'
 import styles from "./Footer.module.css";
 import Logo from "../../assets/Logo.svg";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Footer = () => {
 
+  const navigate = useNavigate();
   const { app__footer, footer__center, footer__side1, side1__detail, side1__links, footer__side, copyright__sec } = styles;
 
   return (
@@ -19,8 +20,8 @@ const Footer = () => {
             <p>We believe in achieving our customers' dreams and showing them that their dreams have become a reality. If you have one such, then we are the right place for you.</p>
           </div>
           <div className={side1__links}>
-            <a href="/" target='_blank' rel='noopener'><ion-icon name='logo-instagram'></ion-icon></a>
-            <a href="/" target='_blank' rel='noopener'><ion-icon name='logo-discord'></ion-icon></a>
+            <a href="https://www.instagram.com/kalative_" target='_blank' rel='noreferrer'><ion-icon name='logo-instagram'></ion-icon></a>
+            <a href="/" target='_blank' rel='norefferer'><ion-icon name='logo-discord'></ion-icon></a>
           </div>
         </div>
 
@@ -31,10 +32,10 @@ const Footer = () => {
         <div className={footer__side}>
           <p>Company</p>
           <ul>
-            <li><Link to={'/'}>About Us</Link></li>
-            <li><Link to={'/'}>Partners</Link></li>
-            <li><Link to={'/'}>Products</Link></li>
-            <li><Link to={'/'}>Resources</Link></li>
+            <li><a onClick={() => {navigate('/')}} href="#whyus">About Us</a></li>
+            <li><a href="https://elitceler.com" target='_blank' rel='noreferrer'>Partners</a></li>
+            <li><Link to="/projects">Products</Link></li>
+            <li><Link to="/projects">Resources</Link></li>
           </ul>
         </div>
 
@@ -45,7 +46,7 @@ const Footer = () => {
         <div className={footer__side}>
           <p>Support</p>
           <ul>
-            <li><Link to={'/'}>Help</Link></li>
+            <li><a href='mailto:tech.kalative@gmail.com'>Help</a></li>
             <li><Link to={'/'}>Privacy Policy</Link></li>
             <li><Link to={'/'}>Terms</Link></li>
             <li><Link to={'/'}>FAQ's</Link></li>

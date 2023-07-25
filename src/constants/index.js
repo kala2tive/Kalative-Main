@@ -2,8 +2,10 @@ import Gif1 from "../assets/HomeWhy1.gif";
 import Gif2 from "../assets/HomeWhy2.gif";
 import Gif3 from "../assets/HomeWhy3.gif";
 
-import dummy from "../assets/Dummy.jpeg";
 import Member from "../assets/Dummy.svg";
+import Aditya from "../assets/Aditya.jpg";
+import Akshat from "../assets/Akshat.jpg";
+import Kashyap from "../assets/Kashyap.jpg";
 
 const homeWhyUs = [
     {
@@ -50,139 +52,87 @@ const homeObjectivies = [
 ]
 
 const homeTestimonials = [
-    {
-        id : 1,
-        detail : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut l',
-        person : 'John Doe'
-    },
-    {
-        id : 2,
-        detail : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut l',
-        person : 'John Doe'
-    },
-    {
-        id : 3,
-        detail : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut l',
-        person : 'John Doe'
-    },
-    {
-        id : 4,
-        detail : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut l',
-        person : 'John Doe'
-    },
-]
-
-// Later fetches top 3 from API.
-const homeBlogsDemo = [
-    {
-        id : 1,
-        image : dummy,
-        title : 'Title of blog.',
-        description : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut l'
-    },
-    {
-        id : 2,
-        image : dummy,
-        title : 'Title of blog.',
-        description : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut l'
-    },
-    {
-        id : 3,
-        image : dummy,
-        title : 'Title of blog.',
-        description : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut l'
-    },
-]
-
-// Newsletters Demo. Later fetched from API.
-const homeNewsDemo = [
-    {
-        id : 10,
-        image : dummy,
-        title : 'Title of News.',
-        description : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut l'
-    },
-    {
-        id : 11,
-        image : dummy,
-        title : 'Title of News.',
-        description : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut l'
-    },
-    {
-        id : 12,
-        image : dummy,
-        title : 'Title of News.',
-        description : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut l'
-    },
+  {
+    id: 1,
+    detail:
+      "This magazine approaches you in a unique manner. It discusses and uncovers topics which are usually avoided. The characters and the mini stories in the magazine provide a sense of familiarity and have a moral value to it. In a sense, both children and adults can relate to this. As a reader, the graphics make the content even more enjoyable. I would recommend this magazine to all my acquaintances and would want them to have the same joyous experience I had while exploring it.",
+    person: "Adity, 11th std student, Delhi",
+  },
+  {
+    id: 2,
+    detail:
+      "Compared to the first book, every section flows well. On the FK readability it is giving me 71-72 which is even better than the first one. On the sthayi-bhava scale the result is exactly the same putting it in the Karuna-veera spectrum which is good. As far as the concepts go, they work/flow well. Authenticity is what I like most about the content.\nOverall well done. Keep this model up and I have no doubt that it will be a great success.",
+    person: "Psychologist",
+  }
 ]
 
 const homeTeam = [
   {
     id: 1,
-    image: Member,
+    image: Aditya,
     name: "Aditya Havaldar",
     role: "Founder & CEO",
     socials: [
       {
         id: 1,
         name: "logo-instagram",
-        link: "",
+        link: "https://instagram.com/thezealitkalakaar",
       },
       {
         id: 2,
         name: "logo-twitter",
-        link: "",
+        link: "https://twitter.com/adithyahavaldar",
       },
       {
         id: 3,
         name: "logo-linkedin",
-        link: "",
+        link: "https://www.linkedin.com/in/adithya-havaldar-87aa461a5",
       },
     ],
   },
   {
     id: 2,
-    image: Member,
+    image: Akshat,
     name: "Akshat Anand",
     role: "Writer & Founder",
     socials: [
       {
         id: 1,
         name: "logo-instagram",
-        link: "",
+        link: "https://instagram.com/akshat_anand1001",
       },
       {
         id: 2,
         name: "logo-twitter",
-        link: "",
+        link: "https://twitter.com/akshatanand1001",
       },
       {
         id: 3,
         name: "logo-linkedin",
-        link: "",
+        link: "https://www.linkedin.com/in/akshat-anand-031010232",
       },
     ],
   },
   {
     id: 3,
-    image: Member,
+    image: Kashyap,
     name: "Kaashyap B.K",
     role: "HEAD - BUSINESS",
     socials: [
       {
         id: 1,
         name: "logo-instagram",
-        link: "",
+        link: "https://instagram.com/kaashyap_15",
       },
       {
         id: 2,
         name: "logo-twitter",
-        link: "",
+        link: "https://twitter.com/bkkaashyap",
       },
       {
         id: 3,
         name: "logo-linkedin",
-        link: "",
+        link: "https://www.linkedin.com/in/kaashyap-bk-601987227",
       },
     ],
   },
@@ -195,15 +145,10 @@ const homeTeam = [
       {
         id: 1,
         name: "logo-instagram",
-        link: "",
-      },
-      {
-        id: 2,
-        name: "logo-linkedin",
-        link: "",
+        link: "https://instagram.com/vish_agarwalll",
       },
     ],
-  }
+  },
 ];
 
-export { homeWhyUs, homeObjectivies, homeTestimonials, homeBlogsDemo, homeNewsDemo, homeTeam };
+export { homeWhyUs, homeObjectivies, homeTestimonials, homeTeam };
