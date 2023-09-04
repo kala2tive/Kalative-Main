@@ -40,7 +40,7 @@ const Newsletters = () => {
                 )
               })
             ) : (
-              <div className={empty__list}>New Blogs are coming soon!</div>
+              <div className={empty__list}>Newsletters are loading soon!</div>
             )}
           </div>
         )}
