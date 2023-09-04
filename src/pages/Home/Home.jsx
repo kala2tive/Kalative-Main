@@ -11,7 +11,7 @@ import { homeTeam } from "../../constants";
 
 const Home = () => {
 
-  const { app__home, home__main, home__section1, section1__box1, section1__box2, section1__box3, section1__box4, home__section2, section2__center, section2__head, section2__main, each__whyus, whyus__box, whyus__gif, home__section3, section3__center, section3__head, section3__main, section3__box, each__obj, home__section4, section4__center, section4__head, section4__main, section4__wrapper, testi__box, section4__toggles, activated, home__section56, section56__center, section56__head, section56__main, blog__card, blog__detail, blog__frame, data__load, home__section7, section7__center, section7__head, section7__main, each__member, member__details, member__socials, loader } = styles;
+  const { app__home, home__main, home__section1, section1__box1, section1__box2, section1__box3, section1__box4, home__section2, section2__center, section2__head, section2__main, each__whyus, whyus__box, whyus__gif, home__section3, section3__center, section3__head, section3__main, section3__box, each__obj, home__section4, section4__center, section4__head, section4__main, section4__wrapper, testi__box, section4__toggles, activated, home__section56, section56__center, section56__head, section56__main, blog__card, blog__detail, blog__frame, data__load, home__section7, section7__center, section7__head, section7__main, each__member, member__details, member__socials, loader, empty__list } = styles;
 
   const [totalTestis] = useState(homeTestimonials.length);
   const [currenTesti, setCurrentTesti] = useState(0);
@@ -207,7 +207,11 @@ const Home = () => {
             </div>
 
             {
-              blogsLoad ? (
+              homeBlogsDemo.length === 0 ? (
+                <div className={empty__list}>New Blogs are coming soon!</div>
+              ) : 
+              (
+                blogsLoad ? (
                 <div className={data__load}>
                   <span class={loader}></span>
                 </div>
@@ -232,6 +236,7 @@ const Home = () => {
                   }
                 </div>
               )
+              )
             }
 
           </div>
@@ -250,7 +255,10 @@ const Home = () => {
             </div>
 
             {
-              newsLoad ? (
+              homeNewsDemo.length === 0 ? (
+                <div className={empty__list}>Newsletters are coming soon!</div>
+              ) : (
+                newsLoad ? (
                 <div className={data__load}>
                   <span class={loader}></span>
                 </div>
@@ -274,6 +282,7 @@ const Home = () => {
                     })
                   }
                 </div>
+              )
               )
             }
 

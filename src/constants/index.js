@@ -2,7 +2,6 @@ import Gif1 from "../assets/HomeWhy1.gif";
 import Gif2 from "../assets/HomeWhy2.gif";
 import Gif3 from "../assets/HomeWhy3.gif";
 
-import Member from "../assets/Dummy.svg";
 import Aditya from "../assets/Aditya.jpg";
 import Akshat from "../assets/Akshat.jpg";
 import Kashyap from "../assets/Kashyap.jpg";
@@ -135,20 +134,7 @@ const homeTeam = [
         link: "https://www.linkedin.com/in/kaashyap-bk-601987227",
       },
     ],
-  },
-  {
-    id: 4,
-    image: Member,
-    name: "Vishesh Agarwal",
-    role: "Program Manager",
-    socials: [
-      {
-        id: 1,
-        name: "logo-instagram",
-        link: "https://instagram.com/vish_agarwalll",
-      },
-    ],
-  },
+  }
 ];
 
 export { homeWhyUs, homeObjectivies, homeTestimonials, homeTeam };
