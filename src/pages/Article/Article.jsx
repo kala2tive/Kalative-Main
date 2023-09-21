@@ -23,7 +23,7 @@ const Article = () => {
   const { app__article, top__badge, page__load, article__center, article__head, head__published, article__desc, back__page } = styles;
 
   const { title, description, writer, image, updatedAt } = singleItem;
-
+  
   return (
     <main className={app__article} >
       {
@@ -58,7 +58,13 @@ const Article = () => {
             
             <article className={article__desc}>
               <img src={image !== '' ? image : Logo} alt={title} />
-              <p>{description}</p>
+              {
+                description?.split('\r\n').filter((item) => item !== '').map((para) => {
+                  return (
+                    <p>{para}</p>
+                  )
+                })
+              }
             </article>
 
           </div>
